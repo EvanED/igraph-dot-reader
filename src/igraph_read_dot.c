@@ -11,8 +11,8 @@ typedef struct record_index {
 char * record_name = "igraph_index";
 
 
-int igraph_read_graph_graphviz(igraph_t *graph, FILE *instream,
-                               int index)
+int igraphext_read_graph_graphviz(igraph_t *graph, FILE *instream,
+                                  int index)
 {
     (void) index;
     

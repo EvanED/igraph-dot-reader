@@ -8,7 +8,7 @@
 extern "C" {
 #endif
 
-extern int igraph_read_graph_graphviz(igraph_t *graph, FILE *instream, int index);
+extern int igraphext_read_graph_graphviz(igraph_t *graph, FILE *instream, int index);
 
 #ifdef __cplusplus
 }
