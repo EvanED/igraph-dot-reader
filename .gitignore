@@ -1,6 +1,7 @@
 # Compiled Object files
 *.slo
 *.lo
+*.os
 *.o
 
 # Compiled Dynamic libraries
@@ -10,3 +11,9 @@
 *.lai
 *.la
 *.a
+
+# SCons stuff
+.sconsign.dblite
+
+# Output
+dot-is-isomorphic
