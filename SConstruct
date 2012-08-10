@@ -1,5 +1,7 @@
 # -*- python -*-
 
+import os
+
 graphviz_inc = "/unsup/graphviz/include"
 graphviz_lib = "/unsup/graphviz/lib"
 
@@ -23,5 +25,6 @@ env.SharedLibrary("dot_igraph", "src/igraph_read_dot.c")
 prog = env.Clone()
 prog.Append(LIBS=["dot_igraph"])
 prog.Append(LIBPATH=["."])
+prog.Append(RPATH=[os.getcwd()])
 
 prog.Program("dot-is-isomorphic", "src/main.cpp")
